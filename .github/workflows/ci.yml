@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: ["main", "master"]
 
+env:
+  MLFLOW_ALLOW_FILE_STORE: "true"    
+
 jobs:
   test:
     runs-on: ubuntu-latest
